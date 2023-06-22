@@ -7,4 +7,6 @@ Let me make project easy for you to understand:
 * .fxml file is all for scene displaying.
 * Hello scene controller is the controller file for scene.
 * Hello Application file is for launching and dialogue boxes.
-   ![Project Image](https://github.com/MuhammadTahaMustafa-06/AUDIO-VIDEO-PLAYER-OOP-PROJECT/blob/230db39000b54833a8206e8363de40d97c8de7d7/Screenshot%202023-06-22%20163404.png)
+
+
+  ![Project Image](https://github.com/MuhammadTahaMustafa-06/AUDIO-VIDEO-PLAYER-OOP-PROJECT/blob/230db39000b54833a8206e8363de40d97c8de7d7/Screenshot%202023-06-22%20163404.png)
