@@ -25,7 +25,6 @@
             <artifactId>javafx-fxml</artifactId>
             <version>19.0.2.1</version>
         </dependency>
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -42,17 +41,6 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-media</artifactId>
             <version>19.0.2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.xdty.media</groupId>
-            <artifactId>mediaplayer</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.xdty.media</groupId>
-            <artifactId>mediaplayer</artifactId>
-            <version>0.0.1</version>
-            <scope>import</scope>
         </dependency>
     </dependencies>
 
