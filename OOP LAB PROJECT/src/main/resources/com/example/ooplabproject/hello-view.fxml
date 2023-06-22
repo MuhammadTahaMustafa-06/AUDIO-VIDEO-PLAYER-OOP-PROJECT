@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="940.0" style="-fx-border-color: black; -fx-border-width: 1.5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ooplabproject.HelloController">
+   <Label fx:id="songLabel" alignment="CENTER" layoutX="369.0" layoutY="27.0" style="-fx-blend-mode: src_over;" text="AUDIO VIDEO PLAYER" textAlignment="CENTER">
+      <font>
+         <Font size="20.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+      <effect>
+         <ColorAdjust brightness="-0.05" />
+      </effect>
+   </Label>
+   <ImageView fitHeight="638.0" fitWidth="613.0" layoutX="119.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+      <viewport>
+         <Rectangle2D />
+      </viewport>
+   </ImageView>
+   <ProgressBar fx:id="videoprogressbar" layoutX="220.0" layoutY="493.0" prefHeight="14.0" prefWidth="692.0" progress="0.0" style="-fx-border-color: black;" />
+   <ComboBox fx:id="SpeedBox" layoutX="644.0" layoutY="524.0" onAction="#ChangeSpeed" prefHeight="29.0" prefWidth="90.0" promptText="SPEED" style="-fx-border-color: black;" />
+   <Slider fx:id="VolumeSlider" layoutX="755.0" layoutY="521.0" max="200.0" prefHeight="24.0" prefWidth="160.0" value="100.0" />
+   <VBox layoutX="225.0" layoutY="54.0">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="328.0" prefWidth="634.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <MediaView fx:id="mediaView" accessibleRole="IMAGE_VIEW" fitHeight="312.0" fitWidth="665.0" layoutY="83.0" AnchorPane.rightAnchor="0.0">
+            <effect>
+               <ColorAdjust brightness="0.2" contrast="0.5" />
+            </effect>
+         </MediaView>
+      </AnchorPane>
+   </VBox>
+   <ButtonBar layoutX="198.0" layoutY="519.0" prefHeight="40.0" prefWidth="437.0">
+      <buttons>
+         <Button fx:id="play" mnemonicParsing="false" onAction="#PlayMedia" text="PLAY" />
+         <Button fx:id="pause" mnemonicParsing="false" onAction="#PauseMedia" text="PAUSE" />
+         <Button fx:id="reset" mnemonicParsing="false" onAction="#ResetMedia" text="RESET" />
+         <Button fx:id="previous" mnemonicParsing="false" onAction="#PreviousMedia" prefHeight="24.0" prefWidth="84.0" style="-fx-border-radius: 10;" text="PREVIOUS" />
+         <Button fx:id="next" graphicTextGap="8.0" mnemonicParsing="false" onAction="#NextMedia" prefHeight="24.0" prefWidth="54.0" text="Next" />
+      </buttons>
+
+
+   </ButtonBar>
+   <MenuBar layoutX="213.0" layoutY="17.0" minHeight="-Infinity" minWidth="-Infinity">
+      <Menu fx:id="file" text="File">
+         <MenuItem fx:id="OpenDirectory" onAction="#openDirectoryAction" text="OpenDirectory" />
+      </Menu>
+   </MenuBar>
+</AnchorPane>

@@ -1,0 +1,184 @@
+.root{
+-fx-background-color: linear-gradient(from 0% 100% to 100% 100%, #74EBD5 0%,#9FACE6 100%);
+}
+.button
+{
+
+    -fx-background-color:
+    linear-gradient(#e66465, #9198e5);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+
+}
+.list-view {
+    -fx-background-color: white;
+}
+
+.list-view .list-cell:hover {
+     -fx-background-color:linear-gradient(from 0% 100% to 100% 100%, #eeaeca 0%,#94bbe9 100%);
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #434343;
+}
+
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-opacity : 0.75;
+    -fx-text-fill: black;
+}
+
+.list-view .label {
+    -fx-text-fill: white;
+}
+
+.jfx-rippler {
+    -jfx-rippler-fill: red;
+}
+.combo-box .list-cell
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.7em;
+}
+
+.combo-box-popup .list-view
+{
+    -fx-background-color: white, white;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-padding: 4 0 4 5;
+
+    /* No alternate highlighting */
+    -fx-background-color: white;
+    -fx-opacity:0.75
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: linear-gradient(from 0% 100% to 100% 100%, #22c1c3 0%,#fdbb2d 100%);
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.combo-box-base
+{
+
+    -fx-background-color:#babec1 , #babec1, #babec1, #babec1;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+}
+.combo-box-base:hover
+{
+    -fx-color: -fx-hover-base;
+}
+
+.combo-box-base:showing
+{
+    -fx-color: -fx-pressed-base;
+}
+
+.combo-box-base:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}
+.label {
+    -fx-text-fill: blue;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+    -fx-background-insets: 0.2em;
+    -fx-background-radius: 0.4em;
+}
+
+.jfx-rippler {
+    -jfx-rippler-fill: red;
+}
+/* Styles for the MediaView */
+.media-view {
+    -fx-background-color: lightgray;
+    -fx-stroke: black;
+    -fx-stroke-width: 2.5px;
+}
+/* Styles for the VolumeSlider */
+.volume-slider {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-stroke-width: 2.5px;
+}
+
+.volume-slider .thumb {
+    -fx-background-color: -fx-accent;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.volume-slider .track {
+    -fx-background-color: -fx-accent;
+}
+/* Styles for the ProgressBar */
+.progress-bar {
+    -fx-background-color: lightgray;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.progress-bar .bar {
+    -fx-background-color:blue;
+}
+
+.my-dialog-pane {
+    -fx-background-color: #f5f5f5; /* Set the background color */
+    -fx-border-color: #d3d3d3; /* Set the border color */
+}
+
+.my-dialog-pane .dialog-header {
+    -fx-background-color: #d3d3d3; /* Set the header background color */
+    -fx-text-fill: #333333; /* Set the header text color */
+}
+
+.my-dialog-pane .content {
+    -fx-text-fill: #333333; /* Set the content text color */
+}
+
+.my-dialog-pane .button-bar {
+    -fx-background-color: #f5f5f5; /* Set the button bar background color */
+    -fx-border-color: #d3d3d3 ; /* Set the button bar border color */
+}
+.menu-bar{
+-fx-background-color:
+    linear-gradient(#e66465, #9198e5);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+#OpenDirectory: hover{
+-fx-background-color: linear-gradient(from 0% 100% to 100% 100%, #22c1c3 0%,#fdbb2d 100%);
+    -fx-text-fill:white;
+}
+#OpenDirectory{
+-fx-background-color : white;
+-fx-text-fill: white;
+}
