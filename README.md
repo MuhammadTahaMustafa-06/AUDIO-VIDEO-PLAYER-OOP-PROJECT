@@ -40,4 +40,3 @@ Please make sure to follow our contribution guidelines before making any contrib
 ## License
 This project is licensed under the MIT License.
 
-By including these additional sections, you provide users with clear instructions on how to set up and use your application. The contribution guidelines and license information also encourage collaboration and establish the project's legal terms.
